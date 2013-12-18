@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6670BA0A1861F8F000E9E619 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6670BA091861F8F000E9E619 /* Foundation.framework */; };
+		6670BA0C1861F8F000E9E619 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6670BA0B1861F8F000E9E619 /* CoreGraphics.framework */; };
+		6670BA0E1861F8F000E9E619 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6670BA0D1861F8F000E9E619 /* UIKit.framework */; };
+		6670BA141861F8F000E9E619 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6670BA121861F8F000E9E619 /* InfoPlist.strings */; };
+		6670BA161861F8F000E9E619 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6670BA151861F8F000E9E619 /* main.m */; };
+		6670BA1A1861F8F000E9E619 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6670BA191861F8F000E9E619 /* AppDelegate.m */; };
+		6670BA1D1861F8F000E9E619 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6670BA1B1861F8F000E9E619 /* Main_iPhone.storyboard */; };
+		6670BA201861F8F000E9E619 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6670BA1E1861F8F000E9E619 /* Main_iPad.storyboard */; };
+		6670BA231861F8F000E9E619 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6670BA221861F8F000E9E619 /* ViewController.m */; };
+		6670BA251861F8F000E9E619 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6670BA241861F8F000E9E619 /* Images.xcassets */; };
+		6670BA2C1861F8F000E9E619 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6670BA2B1861F8F000E9E619 /* XCTest.framework */; };
+		6670BA2D1861F8F000E9E619 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6670BA091861F8F000E9E619 /* Foundation.framework */; };
+		6670BA2E1861F8F000E9E619 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6670BA0D1861F8F000E9E619 /* UIKit.framework */; };
+		6670BA361861F8F000E9E619 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6670BA341861F8F000E9E619 /* InfoPlist.strings */; };
+		6670BA381861F8F000E9E619 /* GOTO_AltSpaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6670BA371861F8F000E9E619 /* GOTO_AltSpaceTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6670BA2F1861F8F000E9E619 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6670B9FE1861F8F000E9E619 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6670BA051861F8F000E9E619;
+			remoteInfo = "GOTO:AltSpace";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6670BA061861F8F000E9E619 /* GOTO:AltSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GOTO:AltSpace.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6670BA091861F8F000E9E619 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6670BA0B1861F8F000E9E619 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6670BA0D1861F8F000E9E619 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6670BA111861F8F000E9E619 /* GOTO:AltSpace-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GOTO:AltSpace-Info.plist"; sourceTree = "<group>"; };
+		6670BA131861F8F000E9E619 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6670BA151861F8F000E9E619 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6670BA171861F8F000E9E619 /* GOTO:AltSpace-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GOTO:AltSpace-Prefix.pch"; sourceTree = "<group>"; };
+		6670BA181861F8F000E9E619 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6670BA191861F8F000E9E619 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6670BA1C1861F8F000E9E619 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		6670BA1F1861F8F000E9E619 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		6670BA211861F8F000E9E619 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6670BA221861F8F000E9E619 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6670BA241861F8F000E9E619 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6670BA2A1861F8F000E9E619 /* GOTO:AltSpaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GOTO:AltSpaceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6670BA2B1861F8F000E9E619 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6670BA331861F8F000E9E619 /* GOTO:AltSpaceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GOTO:AltSpaceTests-Info.plist"; sourceTree = "<group>"; };
+		6670BA351861F8F000E9E619 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6670BA371861F8F000E9E619 /* GOTO_AltSpaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GOTO_AltSpaceTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6670BA031861F8F000E9E619 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6670BA0C1861F8F000E9E619 /* CoreGraphics.framework in Frameworks */,
+				6670BA0E1861F8F000E9E619 /* UIKit.framework in Frameworks */,
+				6670BA0A1861F8F000E9E619 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6670BA271861F8F000E9E619 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6670BA2C1861F8F000E9E619 /* XCTest.framework in Frameworks */,
+				6670BA2E1861F8F000E9E619 /* UIKit.framework in Frameworks */,
+				6670BA2D1861F8F000E9E619 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6670B9FD1861F8F000E9E619 = {
+			isa = PBXGroup;
+			children = (
+				6670BA0F1861F8F000E9E619 /* GOTO:AltSpace */,
+				6670BA311861F8F000E9E619 /* GOTO:AltSpaceTests */,
+				6670BA081861F8F000E9E619 /* Frameworks */,
+				6670BA071861F8F000E9E619 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6670BA071861F8F000E9E619 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6670BA061861F8F000E9E619 /* GOTO:AltSpace.app */,
+				6670BA2A1861F8F000E9E619 /* GOTO:AltSpaceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6670BA081861F8F000E9E619 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6670BA091861F8F000E9E619 /* Foundation.framework */,
+				6670BA0B1861F8F000E9E619 /* CoreGraphics.framework */,
+				6670BA0D1861F8F000E9E619 /* UIKit.framework */,
+				6670BA2B1861F8F000E9E619 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6670BA0F1861F8F000E9E619 /* GOTO:AltSpace */ = {
+			isa = PBXGroup;
+			children = (
+				6670BA181861F8F000E9E619 /* AppDelegate.h */,
+				6670BA191861F8F000E9E619 /* AppDelegate.m */,
+				6670BA1B1861F8F000E9E619 /* Main_iPhone.storyboard */,
+				6670BA1E1861F8F000E9E619 /* Main_iPad.storyboard */,
+				6670BA211861F8F000E9E619 /* ViewController.h */,
+				6670BA221861F8F000E9E619 /* ViewController.m */,
+				6670BA241861F8F000E9E619 /* Images.xcassets */,
+				6670BA101861F8F000E9E619 /* Supporting Files */,
+			);
+			path = "GOTO:AltSpace";
+			sourceTree = "<group>";
+		};
+		6670BA101861F8F000E9E619 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6670BA111861F8F000E9E619 /* GOTO:AltSpace-Info.plist */,
+				6670BA121861F8F000E9E619 /* InfoPlist.strings */,
+				6670BA151861F8F000E9E619 /* main.m */,
+				6670BA171861F8F000E9E619 /* GOTO:AltSpace-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6670BA311861F8F000E9E619 /* GOTO:AltSpaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				6670BA371861F8F000E9E619 /* GOTO_AltSpaceTests.m */,
+				6670BA321861F8F000E9E619 /* Supporting Files */,
+			);
+			path = "GOTO:AltSpaceTests";
+			sourceTree = "<group>";
+		};
+		6670BA321861F8F000E9E619 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6670BA331861F8F000E9E619 /* GOTO:AltSpaceTests-Info.plist */,
+				6670BA341861F8F000E9E619 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6670BA051861F8F000E9E619 /* GOTO:AltSpace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6670BA3B1861F8F000E9E619 /* Build configuration list for PBXNativeTarget "GOTO:AltSpace" */;
+			buildPhases = (
+				6670BA021861F8F000E9E619 /* Sources */,
+				6670BA031861F8F000E9E619 /* Frameworks */,
+				6670BA041861F8F000E9E619 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GOTO:AltSpace";
+			productName = "GOTO:AltSpace";
+			productReference = 6670BA061861F8F000E9E619 /* GOTO:AltSpace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6670BA291861F8F000E9E619 /* GOTO:AltSpaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6670BA3E1861F8F000E9E619 /* Build configuration list for PBXNativeTarget "GOTO:AltSpaceTests" */;
+			buildPhases = (
+				6670BA261861F8F000E9E619 /* Sources */,
+				6670BA271861F8F000E9E619 /* Frameworks */,
+				6670BA281861F8F000E9E619 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6670BA301861F8F000E9E619 /* PBXTargetDependency */,
+			);
+			name = "GOTO:AltSpaceTests";
+			productName = "GOTO:AltSpaceTests";
+			productReference = 6670BA2A1861F8F000E9E619 /* GOTO:AltSpaceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6670B9FE1861F8F000E9E619 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = AltSpace;
+				TargetAttributes = {
+					6670BA291861F8F000E9E619 = {
+						TestTargetID = 6670BA051861F8F000E9E619;
+					};
+				};
+			};
+			buildConfigurationList = 6670BA011861F8F000E9E619 /* Build configuration list for PBXProject "GOTO:AltSpace" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6670B9FD1861F8F000E9E619;
+			productRefGroup = 6670BA071861F8F000E9E619 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6670BA051861F8F000E9E619 /* GOTO:AltSpace */,
+				6670BA291861F8F000E9E619 /* GOTO:AltSpaceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6670BA041861F8F000E9E619 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6670BA201861F8F000E9E619 /* Main_iPad.storyboard in Resources */,
+				6670BA251861F8F000E9E619 /* Images.xcassets in Resources */,
+				6670BA1D1861F8F000E9E619 /* Main_iPhone.storyboard in Resources */,
+				6670BA141861F8F000E9E619 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6670BA281861F8F000E9E619 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6670BA361861F8F000E9E619 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6670BA021861F8F000E9E619 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6670BA231861F8F000E9E619 /* ViewController.m in Sources */,
+				6670BA1A1861F8F000E9E619 /* AppDelegate.m in Sources */,
+				6670BA161861F8F000E9E619 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6670BA261861F8F000E9E619 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6670BA381861F8F000E9E619 /* GOTO_AltSpaceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6670BA301861F8F000E9E619 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6670BA051861F8F000E9E619 /* GOTO:AltSpace */;
+			targetProxy = 6670BA2F1861F8F000E9E619 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6670BA121861F8F000E9E619 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6670BA131861F8F000E9E619 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6670BA1B1861F8F000E9E619 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6670BA1C1861F8F000E9E619 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		6670BA1E1861F8F000E9E619 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6670BA1F1861F8F000E9E619 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		6670BA341861F8F000E9E619 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6670BA351861F8F000E9E619 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6670BA391861F8F000E9E619 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6670BA3A1861F8F000E9E619 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6670BA3C1861F8F000E9E619 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GOTO:AltSpace/GOTO:AltSpace-Prefix.pch";
+				INFOPLIST_FILE = "GOTO:AltSpace/GOTO:AltSpace-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6670BA3D1861F8F000E9E619 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GOTO:AltSpace/GOTO:AltSpace-Prefix.pch";
+				INFOPLIST_FILE = "GOTO:AltSpace/GOTO:AltSpace-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6670BA3F1861F8F000E9E619 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GOTO:AltSpace.app/GOTO:AltSpace";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GOTO:AltSpace/GOTO:AltSpace-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GOTO:AltSpaceTests/GOTO:AltSpaceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6670BA401861F8F000E9E619 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GOTO:AltSpace.app/GOTO:AltSpace";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GOTO:AltSpace/GOTO:AltSpace-Prefix.pch";
+				INFOPLIST_FILE = "GOTO:AltSpaceTests/GOTO:AltSpaceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6670BA011861F8F000E9E619 /* Build configuration list for PBXProject "GOTO:AltSpace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6670BA391861F8F000E9E619 /* Debug */,
+				6670BA3A1861F8F000E9E619 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6670BA3B1861F8F000E9E619 /* Build configuration list for PBXNativeTarget "GOTO:AltSpace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6670BA3C1861F8F000E9E619 /* Debug */,
+				6670BA3D1861F8F000E9E619 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6670BA3E1861F8F000E9E619 /* Build configuration list for PBXNativeTarget "GOTO:AltSpaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6670BA3F1861F8F000E9E619 /* Debug */,
+				6670BA401861F8F000E9E619 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6670B9FE1861F8F000E9E619 /* Project object */;
+}
