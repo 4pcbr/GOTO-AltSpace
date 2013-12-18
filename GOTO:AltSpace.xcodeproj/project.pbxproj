@@ -22,6 +22,8 @@
 		6670BA2E1861F8F000E9E619 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6670BA0D1861F8F000E9E619 /* UIKit.framework */; };
 		6670BA361861F8F000E9E619 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6670BA341861F8F000E9E619 /* InfoPlist.strings */; };
 		6670BA381861F8F000E9E619 /* GOTO_AltSpaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6670BA371861F8F000E9E619 /* GOTO_AltSpaceTests.m */; };
+		6670BA431861F9D200E9E619 /* CompasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6670BA421861F9D200E9E619 /* CompasView.m */; };
+		6670BA461861FB4F00E9E619 /* DirectionData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6670BA451861FB4F00E9E619 /* DirectionData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		6670BA331861F8F000E9E619 /* GOTO:AltSpaceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GOTO:AltSpaceTests-Info.plist"; sourceTree = "<group>"; };
 		6670BA351861F8F000E9E619 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6670BA371861F8F000E9E619 /* GOTO_AltSpaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GOTO_AltSpaceTests.m; sourceTree = "<group>"; };
+		6670BA411861F9D200E9E619 /* CompasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompasView.h; sourceTree = "<group>"; };
+		6670BA421861F9D200E9E619 /* CompasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompasView.m; sourceTree = "<group>"; };
+		6670BA441861FB4F00E9E619 /* DirectionData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionData.h; sourceTree = "<group>"; };
+		6670BA451861FB4F00E9E619 /* DirectionData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,10 @@
 				6670BA221861F8F000E9E619 /* ViewController.m */,
 				6670BA241861F8F000E9E619 /* Images.xcassets */,
 				6670BA101861F8F000E9E619 /* Supporting Files */,
+				6670BA411861F9D200E9E619 /* CompasView.h */,
+				6670BA421861F9D200E9E619 /* CompasView.m */,
+				6670BA441861FB4F00E9E619 /* DirectionData.h */,
+				6670BA451861FB4F00E9E619 /* DirectionData.m */,
 			);
 			path = "GOTO:AltSpace";
 			sourceTree = "<group>";
@@ -254,6 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6670BA231861F8F000E9E619 /* ViewController.m in Sources */,
+				6670BA431861F9D200E9E619 /* CompasView.m in Sources */,
+				6670BA461861FB4F00E9E619 /* DirectionData.m in Sources */,
 				6670BA1A1861F8F000E9E619 /* AppDelegate.m in Sources */,
 				6670BA161861F8F000E9E619 /* main.m in Sources */,
 			);
