@@ -7,7 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DirectionData.h"
+#import "CompassDelegate.h"
 
-@interface ViewController : UIViewController
+float const FRAME_WIDTH = 1350;
+float const FRAME_HEIGHT = 1350;
+
+@interface ViewController : UIViewController<CompassDelegate> {
+    DirectionData* directionData;
+    UIImageView *compassArrowImage;
+    UIImageView *compassDigitsImage;
+    UIImageView *altSpaceArrowImage;
+    UIImageView *altSpaceDigitsImage;
+    UIImageView *distanceView;
+    UITextField *distanceLabel;
+    NSMutableArray* randomRotatedImages;
+    NSNumberFormatter *formatter;
+}
+
+@property (nonatomic, retain) IBOutlet UITextField *distanceLabel;
 
 @end
