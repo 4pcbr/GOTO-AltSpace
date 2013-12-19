@@ -7,8 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
+#import <QuartzCore/QuartzCore.h>
 
-@interface DirectionData : NSObject
+@interface DirectionData : NSObject<CLLocationManagerDelegate> {
+    CLLocationManager *locationManager;
+}
+
+@property (nonatomic,retain) CLLocationManager *locationManager;
+
+FOUNDATION_EXPORT double const AltSpaceLat;
+FOUNDATION_EXPORT double const AltSpaceLon;
+
+- (void) initLocationManager;
 
 @end
-

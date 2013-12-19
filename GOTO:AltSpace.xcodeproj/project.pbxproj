@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D89BB441862058B00EBC59A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D89BB431862058B00EBC59A /* CoreLocation.framework */; };
+		5D89BB461862059900EBC59A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D89BB451862059900EBC59A /* QuartzCore.framework */; };
 		6670BA0A1861F8F000E9E619 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6670BA091861F8F000E9E619 /* Foundation.framework */; };
 		6670BA0C1861F8F000E9E619 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6670BA0B1861F8F000E9E619 /* CoreGraphics.framework */; };
 		6670BA0E1861F8F000E9E619 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6670BA0D1861F8F000E9E619 /* UIKit.framework */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D89BB431862058B00EBC59A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5D89BB451862059900EBC59A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6670BA061861F8F000E9E619 /* GOTO:AltSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GOTO:AltSpace.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6670BA091861F8F000E9E619 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6670BA0B1861F8F000E9E619 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -68,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D89BB461862059900EBC59A /* QuartzCore.framework in Frameworks */,
+				5D89BB441862058B00EBC59A /* CoreLocation.framework in Frameworks */,
 				6670BA0C1861F8F000E9E619 /* CoreGraphics.framework in Frameworks */,
 				6670BA0E1861F8F000E9E619 /* UIKit.framework in Frameworks */,
 				6670BA0A1861F8F000E9E619 /* Foundation.framework in Frameworks */,
@@ -109,6 +115,8 @@
 		6670BA081861F8F000E9E619 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5D89BB451862059900EBC59A /* QuartzCore.framework */,
+				5D89BB431862058B00EBC59A /* CoreLocation.framework */,
 				6670BA091861F8F000E9E619 /* Foundation.framework */,
 				6670BA0B1861F8F000E9E619 /* CoreGraphics.framework */,
 				6670BA0D1861F8F000E9E619 /* UIKit.framework */,
@@ -486,6 +494,7 @@
 				6670BA3D1861F8F000E9E619 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6670BA3E1861F8F000E9E619 /* Build configuration list for PBXNativeTarget "GOTO:AltSpaceTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +503,7 @@
 				6670BA401861F8F000E9E619 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
