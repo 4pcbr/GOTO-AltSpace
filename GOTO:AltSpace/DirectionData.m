@@ -13,8 +13,9 @@
 @synthesize locationManager;
 @synthesize delegateObj;
 
-double const AltSpaceLat = 37.608754;
-double const AltSpaceLon = 55.741058;
+double const AltSpaceLat = 55.741058;
+double const AltSpaceLon = 37.608754;
+double const RADIUS = 6371000;
 
 - (void) initLocationManager {
     locationManager = [[CLLocationManager alloc] init];
@@ -50,8 +51,18 @@ double const AltSpaceLon = 55.741058;
     
     double deltaLat = newLocation.coordinate.latitude - AltSpaceLat;
     double deltaLon = newLocation.coordinate.longitude - AltSpaceLon;
-    double distance = sqrt(pow(deltaLat, 2.0) + pow(deltaLon, 2.0));
     
+    double deltaLatRad = deltaLat * M_PI / 180;
+    double deltaLonRad = deltaLon * M_PI / 180;
+    double lat1Rad = newLocation.coordinate.latitude * M_PI / 180;
+    double lat2Rad = AltSpaceLat * M_PI / 180;
+    
+    double a = pow(sin(deltaLatRad / 2.0), 2.0) + pow(sin(deltaLon / 2.0), 2.0) * cos(lat1Rad) * cos(lat2Rad);
+    double c = 2 * atan2(sqrt(a), sqrt(1 - a));
+    double distance = RADIUS * c;
+    
+    curLat = [[NSNumber alloc] initWithDouble:newLocation.coordinate.latitude];
+    curLon = [[NSNumber alloc] initWithDouble:newLocation.coordinate.longitude];
     curDeltaLat = [[NSNumber alloc] initWithDouble:deltaLat];
     curDeltaLon = [[NSNumber alloc] initWithDouble:deltaLon];
     
@@ -67,27 +78,22 @@ double const AltSpaceLon = 55.741058;
         deferringUpdates = YES;
     }
     
-    
     NSLog(@"%f", [curHeading doubleValue]);
 }
 
 - (void) updateTarget {
     if (curHeading && curDeltaLon && curDeltaLat) {
         
-        double deltaLat = [curDeltaLat doubleValue];
-        double deltaLon = [curDeltaLon doubleValue];
+        double deltaLatRad = [curDeltaLat doubleValue] * M_PI / 180;
+        double deltaLonRad = [curDeltaLon doubleValue] * M_PI / 180;
+        double altSpaceLatRad = AltSpaceLat * M_PI / 180;
+        double altSpaceLonRad = AltSpaceLon * M_PI / 180;
+        double curLatRad = [curLat doubleValue] * M_PI / 180;
+        double curLonRad = [curLon doubleValue] * M_PI / 180;
         
-        double angle;
-        
-        if (deltaLat == 0) {
-            if (deltaLon > 0) {
-                angle = 90;
-            } else {
-                angle = -90;
-            }
-        } else {
-            angle = atan(deltaLon / deltaLat);
-        }
+        double y = sin(deltaLonRad) * cos(altSpaceLatRad);
+        double x = cos(curLatRad) * sin(altSpaceLatRad) - sin(curLatRad) * cos(altSpaceLatRad) * cos(deltaLonRad);
+        double angle = atan2(y, x) * 180 / M_PI;
         
         if (delegateObj) {
             angle = -1 * [curHeading doubleValue] * M_PI / 180.0 - angle;

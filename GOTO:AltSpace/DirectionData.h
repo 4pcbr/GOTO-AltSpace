@@ -17,6 +17,8 @@
     NSNumber* curHeading;
     NSNumber* curDeltaLat;
     NSNumber* curDeltaLon;
+    NSNumber* curLat;
+    NSNumber* curLon;
     BOOL deferringUpdates;
 }
 

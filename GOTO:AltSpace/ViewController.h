@@ -23,6 +23,8 @@ float const FRAME_HEIGHT = 1350;
     UITextField *distanceLabel;
     NSMutableArray* randomRotatedImages;
     NSNumberFormatter *formatter;
+    BOOL isTargetLocked;
+    BOOL isCompassLocked;
 }
 
 @property (nonatomic, retain) IBOutlet UITextField *distanceLabel;

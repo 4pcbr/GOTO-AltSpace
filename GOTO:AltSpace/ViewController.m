@@ -38,6 +38,9 @@
         [randomRotatedImages addObject:[self createCenteredImageWithName:imageName]];
     }
     
+    isTargetLocked = false;
+    isCompassLocked = false;
+    
     [self startRandomRotation];
     
     formatter = [[NSNumberFormatter alloc] init];
@@ -67,23 +70,33 @@
 }
 
 - (void) setCompassAngle:(double)angle {
-    [UIView beginAnimations:@"compass.rotate" context:NULL];
-    [UIView setAnimationDuration:0.5];
-    
-    compassArrowImage.transform = CGAffineTransformMakeRotation(angle);
-    compassDigitsImage.transform = CGAffineTransformMakeRotation(angle);
-    
-    [UIView commitAnimations];
+    if (isCompassLocked) return;
+    isCompassLocked = true;
+    [UIView animateWithDuration:1.0
+                          delay:0
+                        options:UIViewAnimationCurveEaseInOut
+                     animations:^{
+                         compassArrowImage.transform = CGAffineTransformMakeRotation(angle);
+                         compassDigitsImage.transform = CGAffineTransformMakeRotation(angle);
+                     }
+                     completion:^(BOOL finished){
+                         isCompassLocked = false;
+                     }];
 }
 
 - (void) setTargetAngle:(double)angle {
-    [UIView beginAnimations:@"compass.rotate" context:NULL];
-    [UIView setAnimationDuration:0.5];
-    
-    altSpaceArrowImage.transform = CGAffineTransformMakeRotation(angle);
-    altSpaceDigitsImage.transform = CGAffineTransformMakeRotation(angle);
-    
-    [UIView commitAnimations];
+    if (isTargetLocked) return;
+    isTargetLocked = true;
+    [UIView animateWithDuration:1.0
+                          delay:0
+                        options:UIViewAnimationCurveEaseInOut
+                     animations:^{
+                         altSpaceArrowImage.transform = CGAffineTransformMakeRotation(angle);
+                         altSpaceDigitsImage.transform = CGAffineTransformMakeRotation(angle);
+                     }
+                     completion:^(BOOL finished){
+                         isTargetLocked = false;
+                     }];
 }
 
 - (void) setDistanceToTarget:(double)distance {
